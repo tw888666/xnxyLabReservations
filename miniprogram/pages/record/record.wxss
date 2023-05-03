@@ -1,0 +1,64 @@
+/* pages/record/record.wxss */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .reservation-record {
+    margin-bottom: 30px;
+  }
+  
+  .scan-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .scan-icon image {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 10px;
+  }
+/*  */
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 16px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  
+  .reservation-list {
+    width: 100%;
+  }
+  
+  .reservation-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .item-date {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .item-info {
+    font-size: 16px;
+    color: #666;
+  }
+  

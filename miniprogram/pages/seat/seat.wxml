@@ -1,0 +1,34 @@
+<view style="text-align: center;background-color: white;">
+<text style="font-size: 52rpx;color: cadetblue;">实验室{{floor}}楼</text>
+</view>
+<van-divider style="height: 16px;"/>
+<van-row style="background-color: white;">
+  <van-col span="8" >
+    <image src="/images/使用中.png" mode=""/>
+    <text>使用中</text>
+  </van-col>
+  <van-col span="8" >
+    <image src="/images/有约.png" mode=""/>
+    <text>有约</text>
+  </van-col>
+  <van-col span="8">
+    <image src="/images/可选.png" mode=""/>
+    <text>可选</text>
+  </van-col>
+</van-row>
+<van-divider style="height: 16px;"/>
+
+<van-grid column-num="4" border="{{ true }}">
+  <van-grid-item use-slot wx:for="{{ seatList }}" wx:key="index" bindtap="handleSeat"  data-id="{{item._id}}" data-status="{{item.status}}">
+      <image src="{{imagePath[item.status]}}" mode=""  />
+    <view>
+        {{item.lab_number}}
+    </view>
+
+  </van-grid-item>
+</van-grid>  
+ 
+
+<van-dialog id="van-dialog" />
+
+

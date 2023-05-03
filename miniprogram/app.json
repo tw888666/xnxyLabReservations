@@ -1,0 +1,55 @@
+{
+  "pages": [
+      "pages/my/my",
+      "pages/home/home",
+      "pages/seat/seat",
+      "pages/record/record",
+      "pages/breach/breach"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "湘南学院实验室预订系统",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "list": [
+        {
+          "pagePath": "pages/my/my",
+          "text": "我的",
+          "iconPath": "/images/my.png",
+          "selectedIconPath": "/images/my_sel.png"
+        },
+    {
+      "pagePath": "pages/home/home",
+      "text": "预订",
+      "iconPath": "/images/reserve.png",
+      "selectedIconPath": "/images/reserve_sel.png"
+    }
+]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-notice-bar": "@vant/weapp/notice-bar/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-loading": "@vant/weapp/loading/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-overlay": "@vant/weapp/overlay/index"
+  }
+}

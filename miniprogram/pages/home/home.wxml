@@ -1,0 +1,28 @@
+<van-notice-bar
+  left-icon="volume-o"
+  scrollable
+  text="本周六将进行四六级考试，除考试相关人员请勿进入实验室，期间将关闭预约系统"
+/>
+<van-overlay show="{{ flag }}" bind:click="onClickHide">
+    <van-dialog id="van-dialog" />
+</van-overlay>
+<view class="container">
+  <view wx:for="{{availableSeatsList}}" wx:for-item="item" wx:key="floor" class="floor-section">
+    <view class="floor-info">
+      <text class="floor-number">{{item._id}}F</text>
+      <van-image class="floor-image" src="/images/可选.png" width="16" height="16" lazy-load/>
+      <text class="available-seats">{{item.availableLabsCount}}个可用座位</text>
+    </view>
+    <view class="seat-selection" bindtap="handleReservation" data-floor="{{floor}}">
+      <van-image class="select-seat-image" src="/images/可选.png" width="32" height="32" lazy-load/>
+      <text class="select-seat-text">选座</text>
+    </view>
+  </view>
+</view>
+
+
+
+
+
+
+

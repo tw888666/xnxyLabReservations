@@ -1,0 +1,20 @@
+<!--pages/my/my.wxml-->
+<van-notice-bar
+  left-icon="volume-o"
+  scrollable
+  text="本周六将进行四六级考试，除考试相关人员请勿进入实验室，期间将关闭预约系统"
+/>
+<view class="userInfo">
+    <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+    <text wx:if="{{flag}}">选择头像</text>
+     <image class="avatar" mode="scaleToFill" src="{{avatarUrl}}"></image>
+ </button> 
+</view>
+
+<van-cell title="预约记录" is-link link-type="navigateTo" url="/pages/record/record"/>
+<van-cell title="违约记录" is-link link-type="navigateTo" url="/pages/breach/breach"/>
+<button bindtap="AddLab">添加实验室</button>
+<button bindtap="DelLab">删除实验室</button>
+<button bindtap="AddReservations">添加预订者</button>
+<button bindtap="DelReservations">删除预订者</button>
+<van-dialog id="van-dialog" />

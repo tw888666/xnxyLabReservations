@@ -1,0 +1,5 @@
+/* pages/index/index.wxss */
+image{
+    height: 32px;
+    width: 32px;
+}

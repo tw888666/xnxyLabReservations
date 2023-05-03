@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .floor-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 15px; /* 从 10px 增加到 15px */
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .floor-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .floor-number {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .available-seats {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  
+  .seat-selection {
+    display: flex;
+    flex-direction: column; /* 添加 flex-direction: column 以使文本显示在图片下方 */
+    align-items: center;
+  }
+  
+  .select-seat-text {
+    font-size: 16px;
+    margin-top:0px; /* 添加 margin-top 以增加与图片之间的距离 */
+  }
+  
